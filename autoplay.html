@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Video autoplay on iPhone / iPAD</title>
+</head>
+<style>
+    video::-webkit-media-controls{
+        display: none;
+    }
+</style>
+<body>
+<video id="vid" controls src="nvidia.mp4" preload="metadata"></video>
+<script>
+    var vid = document.getElementById("vid");
+    var intervalID = null;
+    var time = 0;
+    var speed = 15;
+    vid.onloadedmetadata = function() {
+        var duration = vid.duration;
+        intervalID = setInterval(function(){
+            time++;
+            if (time / speed <=  duration){
+                vid.currentTime = time / speed;
+            }else{
+                clearInterval(intervalID);
+            }
+        },1000/speed);
+    };
+
+    vid.addEventListener('click', function(){
+        clearInterval(intervalID);
+        this.play();
+    });
+
+</script>
+</body>
+</html>
