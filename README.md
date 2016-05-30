@@ -3,11 +3,8 @@
 
 This demo shows auto video playback on iPhone / iPAD devices. The following features are fully supported:
 * Auto playback
-* Click on the video to enter regular playback more including audio
-* Progressive playback (.mp4 videos)
-* [HLS](https://developer.apple.com/streaming/) streaming
-* Live streaming
-* Inline playback
+* Clicking the video resume regular playback with audio from the current position
+* Inline playback on iPhone
 * Custom controls
 
 ## Demo
