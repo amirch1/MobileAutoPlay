@@ -1,4 +1,4 @@
-# MobileAutoPlay
+# Mobile Autoplay
 **Video autoplay (inline) for iOS mobile devices**
 
 This demo shows auto video playback on iPhone / iPAD devices. The following features are fully supported:
